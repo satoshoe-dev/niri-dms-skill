@@ -30,12 +30,11 @@ skill), developing niri or DMS, and installing either from scratch.
 
 ## Install
 
-With the [skills CLI](https://github.com/vercel-labs/skills), from a clone or
-from wherever this repository is published:
+With the [skills CLI](https://github.com/vercel-labs/skills):
 
 ```bash
 npx skills add ./niri-dms-skill -g            # local clone, user-wide
-npx skills add <git-url-of-this-repo> -g      # from a remote
+npx skills add satoshoe-dev/niri-dms-skill -g  # from GitHub
 ```
 
 By hand, copy or symlink the skill folder into your agent's skills directory:
