@@ -74,8 +74,9 @@ The skill asks the agent to:
 
 ## Versions
 
-Written against niri 26.04 and DMS 1.6.3, and checked against the upstream
-sources and docs of both. Features newer than a given release carry the
+Written against niri 26.04 and DMS 1.6.3, checked against the upstream
+sources and docs of both, and updated for DMS 2.0.0 (folder names, app id,
+frame opacity, dashboard plugins). Features newer than a given release carry the
 version that introduced them, for example `include` (niri 25.11),
 `place-within-backdrop` (niri 25.05), background blur (niri 26.04), and
 `dms backup` and plugin registries (DMS 1.6.0). On other versions the skill

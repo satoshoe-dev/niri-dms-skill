@@ -98,8 +98,7 @@ dms ipc call settings get niriLayoutGapsOverride
 dms ipc call settings dump | jq '.barConfigs[0].rightWidgets'
 ```
 
-Newer DMS (after 1.6.3, on the development branch at the time of writing)
-also reads drop-in files from `~/.config/DankMaterialShell/config.d/*.json`.
+DMS 2.0 also reads drop-in files from `~/.config/dms/config.d/*.json`.
 Do not rely on that on 1.6.x.
 
 ### Changing a setting
@@ -136,9 +135,14 @@ widgets use the plugin id (optionally `id:instance`). Change layouts in
 Settings, Dank Bar, Widgets (`dms ipc call settings openWith dankbar_widgets`)
 when possible.
 
-DMS 1.6 also has the Dank Island bar style and a screen frame mode. An island
-claims its screen edge: a normal bar configured on the same edge of the same
-screen is not drawn at all. Move one of them to another edge.
+DMS 1.6 and newer also have the Dank Island bar style and a screen frame mode.
+An island claims its screen edge: a normal bar configured on the same edge of
+the same screen is not drawn at all. Move one of them to another edge.
+
+Since 2.0 the frame takes its color and opacity from the first enabled bar
+(`transparency` in `barConfigs`); `frameOpacity` and `frameColor` are gone and
+the settings migration moves them over. Popouts and DMS windows use
+`popupTransparency`.
 
 ## Control Center
 

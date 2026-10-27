@@ -85,7 +85,9 @@ Enabling loads the plugin; it still has to be placed:
 - Control Center tile: edit mode of the Control Center, or add `{ "id": "plugin_<id>", "enabled": true, "width": 50 }` to `controlCenterWidgets`
 - desktop widget: Desktop Widgets page (`settings openWith desktop_widgets`)
 - launcher plugin: type its trigger in the launcher
-- dash tab: appears on its own; dash cards are added in the dash edit mode
+- dash tab: appears on its own (open it with `dms ipc call dash open plugin_<id>`); dash cards are added in the dash edit mode. The pencil for edit mode only shows while the pointer is over the icon of the active tab; F2 works as well.
+
+DMS 1.6 skips plugin surfaces it does not know (`dash`, `dashCard`) with a log line and loads the rest. DMS 2.0 drops the whole plugin when a component listed in `plugin.json` is missing, so check the log after updating a plugin.
 
 Bar layouts and tile lists are arrays, so `settings set` cannot change them;
 see "Changing a setting" in [dms.md](dms.md).

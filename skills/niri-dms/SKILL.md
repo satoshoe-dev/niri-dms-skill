@@ -38,6 +38,11 @@ Use this skill for any request that touches:
 If you are about to edit a file in `~/.config/niri/` or
 `~/.config/DankMaterialShell/`, read the matching topic guide first.
 
+DMS 2.0 renamed its folders to `~/.config/dms`, `~/.local/state/dms` and
+`~/.cache/dms`. The first `dms` command after the update moves them and leaves
+a symlink under the old name, so the `DankMaterialShell` paths in this skill
+work on 1.6 and 2.0. Check with `dms version` which one is installed.
+
 ## Topic guides
 
 Read the guide that matches the request before you start:

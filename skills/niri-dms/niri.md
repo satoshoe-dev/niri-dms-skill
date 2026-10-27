@@ -156,7 +156,8 @@ Opening properties (`open-on-workspace`, `open-floating`,
 `default-column-width`, ...) apply once when the window opens. Dynamic
 properties (`opacity`, `geometry-corner-radius`, `block-out-from`, ...) apply
 continuously. DMS's own windows (Settings, Notepad, Polkit, process list) use
-app id `com.danklinux.dms`.
+app id `dev.duxlabs.shell` since DMS 2.0 and `com.danklinux.dms` before. A rule
+that should work on both matches both ids.
 
 DMS also lists rules from all your files as JSON, which is handy for review:
 `dms config windowrules list niri`.
